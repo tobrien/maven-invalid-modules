@@ -193,9 +193,12 @@ would read something like this:
     developer agrees not to hold Maven liable on Twitter for the fact
     that sibling modules totally screw everything up."
     
-Understood?
+Or, just do whatever.  I don't care what you do unless I have to come
+in and clean up the aftermath, which, if you choose to do this will be
+somewhat messy once you have a hundred projects all pointing at each
+other.
 
+You know what it's going to eventually look like?   That scene in
+Reservoir Dogs when they are all ready to shoot each other.   In other
+words, it ain't going to be pretty.
 
-Some people have pointed out that sibling modules do in fact work
-and the the book is incorrect.   While it isn't enforced by the
-tool, using sibling modules 
