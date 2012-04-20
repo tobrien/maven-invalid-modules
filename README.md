@@ -154,6 +154,30 @@ Gradle immediately, or 3. Seek alternative employment.   Honestly,
 using Gradle would be a better alternative to trying to shoehorn Maven
 into someone's idea of how it should run.
 
+Q3: Our build person does this to create dynamic module sets, bad?
+-----------------------------------------------------
+
+Very bad, don't do this.     But maybe people don't understand what
+this means?    Look at module-d/ in this project.  Isn't that great,
+module-d has a different set of modules than module-a and there's
+overlap.   Some people see this and think that can use this to create
+different builds for different target environments.
+
+Sure, you could go off on your own, embrace a worst practice, and use
+this feature to reimplement Maven Profiles.  Or you could read the
+Maven documentation and learn about Maven Profiles.  If you really
+need to be able to change module sets involved in a build.  You can
+define (and redefine modules) in a profile.    Do that, don't do this.
+
+Q4: C'mon Maven's approach to multi-module projects is wrong...
+------------------------------------------------------
+
+...Stop right there.  Maven's assumptions are Maven's assumptions.
+Your opinion or my opinion makes no difference.   If you want to go
+make your own build system from scratch go and do that.    Better yet,
+go use Gradle, Gradle is better for people who find pages like this
+annoying. 
+
 Man, chill out, if I want to do sibling modules, it's my prerogative.
 ----------------------------------------------------
 
